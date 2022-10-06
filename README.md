@@ -532,6 +532,9 @@ exit;
 
 ![Figure 23](./Screenshots/setup/7.png)
 
+</details>
+
+
 Create Database and User with limited permission
 =================================================
 <details>
