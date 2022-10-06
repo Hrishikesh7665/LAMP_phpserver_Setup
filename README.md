@@ -31,7 +31,9 @@ Table of contents
    * [Securing Your phpMyAdmin Instance](#securing-your-phpmyadmin-instance)
    * [Change phpMyAdmin Instance Port](#change-phpmyadmin-instance-port)
    * [Set MariaDB root Password](#set-mariadb-root-password)
+   * [Create Database and User with limited permission](#create-database-and-user-with-limited-permission)
 <!--te-->
+
 Ubuntu Server Installation
 ===========================
 <details>
@@ -529,3 +531,15 @@ exit;
 ```
 
 ![Figure 23](./Screenshots/setup/7.png)
+
+Create Database and User with limited permission
+=================================================
+<details>
+<summary>Show/Hide</summary>
+now we need to create a Database and a separate database user with limited permissions(SELECT, INSERT, UPDATE) for our website backend
+
+MySQL Command
+```
+GRANT SELECT, INSERT, UPDATE ON `a_database_name`.* TO 'a_user_name'@'localhost' IDENTIFIED BY 'user_pass';
+```
+</details>
